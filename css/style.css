@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: linear-gradient(to bottom, #000000, #616163);
+    color: #ccc;
+    font-family: 'karla', sans-serif;
+    width: 90vw;
+    height: 200vh;
+}
+
+.container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000000;
+    box-shadow: 1px 5px 10px black;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container .header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .title h1 {
+    font-size: 70pt;
+    font-family: 'bebas neue', sans-serif;
+}
+
+.container .header .title h1:hover {
+    color: rgb(74, 1, 247);
+    transform: scale(0.96);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.container .header .title .icons {
+    font-size: 22pt;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.container .header .title .icons a {
+    color: #ccc;
+    margin: 5px;
+}
+
+.container .header .title .icons a:hover {
+    color: rgb(74, 1, 247);
+    transform: scale(0.96);
+    transition: all 0.3s;
+}
+
+.container .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    width: 100vw;
+    height: 90vh;
+}
+
+.container .projects h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 15pt;
+}
+
+.container .project-title h1 {
+    margin-top: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 25pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container .projects .bar {
+
+    width: 400px;
+    height: 5px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.container .projects .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .projects .itens .box-item {
+    margin: 10px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.container .projects .itens .box-item a {
+    width: 300px;
+    height: 200px;
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: 1px 10px 12px black;
+    background:linear-gradient(#000000,rgb(81, 3, 155));
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .projects .itens .box-item a:hover {
+    transform: scale(0.96);
+    background:linear-gradient( #000000,#000000,rgb(81, 3, 155));
+    transition: all 0.3s ease-in;
+}
+
+.container main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 70vh;
+    background:linear-gradient(#18181d,black);
+}
+
+.container main .section-topics-left {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+}
+
+.container main .section-topics-left .info h1 {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 30pt;
+}
+
+.container main .section-topics-left .ling h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 30pt;
+}
+
+.container main .section-topics-left .info p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.container main .section-topics-left .ling p {
+    color: #ffffff;
+}
+
+.container main .section-topics-left .ling>i {
+    font-size: 40pt;
+}
+
+
+.container main .section-topics-left .bar {
+    width: 500px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.container main .section-topics-left .ling .bar {
+    width: 500px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.container main .section-topics-right img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+}
+
+@media only screen and (max-width:1024px){
+    .container .header{
+        width: 110%;
+    }
+    .container .projects {
+        width: 100vw;
+        height: 60vh;
+    }
+    
+}
+@media only screen and (max-width:700px){
+
+    .container .header{
+        width: 99vw;
+    }
+    .container .header .title h1{
+        font-size: 50pt;
+    }
+    .container .header .title h2{
+        font-size: 15pt;
+    }
+    .container .header .title p{
+        font-size: 10pt;
+    }
+    .container .projects {
+        width: 99vw;
+        height: 60vh;
+    }
+    .container .projects .bar {
+        width: 200px;
+        height: 5px;
+        border-radius: 50px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .container .projects h1 {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 10pt;
+    }
+    
+    .container .project-title h1 {
+        margin-top: 38px;
+        font-size: 20pt;
+    }
+    .container .projects .itens .box-item a {
+        width: 100px;
+        height: 100px;
+        color: #ccc;
+        font-size: 10pt;
+        display: flex;
+        margin-top: -50px;
+    }
+    .container main .section-topics-left .info h1 {
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 15pt;
+        margin: 10px;
+    }
+    .container main .section-topics-left .info p {
+        margin: 10px;
+    }
+    
+    .container main .section-topics-left .ling h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #ccc;
+        font-size: 15pt;
+        margin: 10px;
+    }
+    .container main .section-topics-left .ling i {
+        margin: 10px;
+    }
+    
+    .container main .section-topics-left{
+        width: 99vw;
+    }
+    .container main .section-topics-left .info p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+    
+    .container main .section-topics-left .ling>i {
+        font-size: 20pt;
+    }
+    .container main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container main .section-topics-right img{
+        width: 120px;
+        height: 120px; 
+        border: 2px solid #ccc;   
+    }
+    .container main .section-topics-left .bar,
+    .container main .section-topics-left .ling .bar {
+        width: 300px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+}
